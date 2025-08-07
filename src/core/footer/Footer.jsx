@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="w-4/5">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
             <div className="text-left flex flex-col gap-4">
-              <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
+              <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden w-fit focus:opacity-80" href="#" aria-label="Brand">
                 <Link to='/'>
                   <img className='lg:w-40 w-40 md:h-18 h-15' src="/images/home/logo-icaabc.webp" alt="LOGO" />
                 </Link>
@@ -19,10 +19,10 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-white mb-3">Conference Information</h3>
               <ul className="space-y-2 md:text-base">
                 <li>
-                  <a className=" " href="/conference-tracks">Home</a>
+                   <a className=" " href="/">Home</a>
                 </li>
                 <li>
-                  <a className=" " href="/conference-tracks">About the Conference</a>
+                  <a className=" " href="/about">About the Conference</a>
                 </li>
                 <li>
                   <a className=" " href="/conference-tracks">Conference Tracks</a>

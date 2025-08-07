@@ -55,7 +55,7 @@ function Submission() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('http://192.168.1.30/ICACSIT/icacsit/send_mail.php', {
+            const mailPromise = fetch('http://192.168.1.30/ICAABC/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
@@ -174,7 +174,7 @@ function Submission() {
                 <div className="pt-10 px-6 xl:px-20 w-full xl:w-[70%] mx-auto">
                     <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Paper Submission</h2>
                 </div>
-                <div className="w-full xl:w-[65%] px-4 flex flex-col lg:flex-row gap-8 items-center justify-center mx-auto">
+                <div className="w-full  max-w-[75rem] px-4 flex flex-col lg:flex-row gap-8 items-center justify-center mx-auto">
                     <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-2xl p-8 order-1 lg:order-2 border-t-4 border-b-4 border-[#528F62]">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Submission Guidelines</h2>
                         <ul className="space-y-3 text-gray-700">

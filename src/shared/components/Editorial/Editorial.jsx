@@ -5,27 +5,26 @@ import Bottom from '../Bottom/Bottom';
 
 function Editorial() {
     const Tech = [
-        { name: "Twana A. Hamad", position: "Harran University", location: "Turkey" },
-        { name: "Ammar Amjad", position: " National Yang Ming Chiao Tung University", location: "Taiwan" },
-        { name: "Qiang Tong", position: "Shenzhen Institute of Information Technology", location: "China" },
-        { name: "Abraham Musa Peter ", position: "Federal University Lokoja", location: "Nigeria" },
-        { name: 'V. Pravenea', position: ' Dr.N.G.P Institute of Technology', location: ' India' },
-        { name: "Waseem", position: "Jiangsu University", location: "China" },
-        { name: 'Ankit Sharma', position: ' Nirma University', location: 'India' },
-        { name: 'Theresa Omodunbi', position: 'Obafemi Awolowo University', location: 'Nigeria' },
-        { name: 'Hua Qu', position: 'Tianjin Medical University', location: 'China' },
-        { name: 'Satyabrata Roy', position: 'Manipal University Jaipur', location: 'India' },
-        { name: 'Chen Li', position: 'Hangzhou TCM Hospital', location: 'China' },
-        { name: 'K. Ramesh', position: ' V.R.S. College of Engineering and Technology', location: ' India' },
-        { name: 'Asma Sbeih', position: 'Palestine Ahliya university', location: 'Palestine' },
-        { name: 'R. Veerandrakumar', position: ' Panimalar Engineering College', location: 'India' },
-        { name: 'Asef Shahriar', position: 'Khulna University of Engineering & Technology', location: 'Bangladesh' },
-        { name: 'Zhao Qianyi', position: 'Jinan University', location: 'China' },
-        { name: 'Elegbeleye Femi Abiodun', position: 'Walter Sisulu University', location: 'South Africa' },
-        { name: 'Masoud Asghari', position: 'University of Maragheh', location: 'Iran' },
-        { name: 'Maryam Anwer', position: 'Majma University', location: 'Saudi Arabia' },
-        { name: 'G. Vinodhini', position: 'Annamalai University', location: 'India' },
-        { name: 'Asghar Ali Shah', position: 'Bahria university', location: 'Pakistan' },
+        { name: "A. Antonidoss", department: "Department of Computer Science and Business Systems", position: "Hindustan Institute of Technology", location: "India" },
+        { name: "Nguyen Van Thieu", department: "Department of Computer Science and Engineering", position: "Phenikaa University", location: "Vietnam" },
+        { name: "Sakthivel Velusamy", department: "Department of Aerospace Information Engineering", position: "Konkuk University", location: "South Korea" },
+        { name: "T. Jayasankar", department: "Department of Electronics and Communication Engineering", position: "University College of Engineering(BIT Campus)", location: "India" },
+        { name: "Asad Aziz", department: "Department of Geography", position: "University of Gujrat", location: "Pakistan" },
+        { name: "Alamu Olumide", department: "Department of Electrical and Electronics Engineering", position: "University of Lagos", location: "Nigeria" },
+        { name: "Hansi Gunasinghe", department: "Department of Computing and Information Systems", position: "Sabaragamuwa University", location: "Sri Lanka" },
+        { name: "Theopilus Bayu Sasongko", department: "Department of Informatics", position: "University of Amikom Yogyakarta", location: "Indonesia" },
+        { name: "Daban Kadhim Omar Dabbagh", department: "Department of Geography", position: "Salahaddin University", location: " Iraq" },
+        { name: "Argha Chandra Dhar", department: "Department of Computer Science and Engineering", position: "Khulna University of Engineering and Technology", location: "Bangladesh" },
+        { name: "A.Karthikeyan", department: "Department of Electronics and Communication Engineering", position: "SNS College of Technology", location: "India" },
+        { name: "Moses Adah Agana", department: "Department of Computer Science and Engineering", position: "University of Calabar", location: "Nigeria" },
+        { name: "Md Nahiduzzaman", department: "Department of Electronics and Communication Engineering", position: "Rajshahi University of Engineering and Technology", location: "Bangladesh" },
+        { name: "Zhihao Li", department: "Department of Economics and Social Sciences", position: "Nanjing Agricultural University", location: "China" },
+        { name: "Muhammad Suleman Memon", department: "Department of Information Technology", position: "University of Sindh", location: "Pakistan" },
+        { name: "Thendral Puyalnithi", department: "Department of Computer Science and Engineering", position: "Kalasalingam Academy of Research and Education", location: "India" },
+        { name: "S. Prasanth", department: "Department of Physical Sciences and Technology", position: "Sabaragamuwa University of Sri Lanka", location: "Sri Lanka" },
+        { name: "Aaron Izang", department: "Department of Information Technology", position: "Babcock University", location: "Nigeria" },
+        { name: "D. Kayathri Devi", department: "Department of Information Technology and Engineering", position: "Amity University", location: "Uzbekistan" },
+        { name: "P. Tamizharasi", department: "Department of Electrical and Electronics Engineering", position: "Adhiparasakthi Engineering College", location: "India" },
     ];
     return (
         <>
@@ -41,10 +40,10 @@ function Editorial() {
                             The Editorial Board of the International Conference on Advances in AI, Business Analytics, and Cloud Systems plays a crucial role in maintaining the academic integrity and excellence of the event. Our board members guide the peer-review process, ensure the highest standards of ethical publishing, and contribute strategic insights that align with the evolving frontiers of artificial intelligence, business intelligence, and cloud technologies.
                         </div>
                     </div>
-                    <div className=' bg-gray-100 md:p-6 p-3 rounded-lg  w-fit   my-10 mx-auto flex flex-col md:flex-col 2xl:items-start gap-5 lg:gap-5'>
-                        <div className="grid  bg-white p-3 md:p-6 grid-cols-1 lg:grid-cols-1 md:gap-5 gap-5 mx-auto">
+                    <div className='bg-gray-100 md:p-6 p-3 rounded-lg  w-fit   mx-auto flex flex-col md:flex-col 2xl:items-start gap-5 lg:gap-5'>
+                        <div className="grid bg-white p-3 md:p-6 grid-cols-1 lg:grid-cols-2 md:gap-5 gap-5 mx-auto rounded-lg border-y-3 border-y-[#528F62]">
                             {Tech.map((member, index) => (
-                                <Edit key={index} position={member.position} name={member.name} location={member.location} />
+                                <Edit key={index} position={member.position} department={member.department} name={member.name} location={member.location} />
                             ))}
                         </div>
                     </div>

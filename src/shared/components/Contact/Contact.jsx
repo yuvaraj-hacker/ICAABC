@@ -17,7 +17,7 @@ function Contact() {
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-            const response = await fetch('http://192.168.1.30/ICACSIT/icacsit/message_mail.php', {
+            const response = await fetch('http://192.168.1.30/ICAABC/message_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });

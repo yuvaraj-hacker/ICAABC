@@ -35,12 +35,12 @@ const Header = () => {
   return (
     <>
 
-      <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3  ${!isHome || scrolled || (isHome && isMobile) ? "bg-[#528F62]" : " bg-[#528F62]"} `}>
+      <header className={`relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-3 shadow-md ${!isHome || scrolled || (isHome && isMobile) ? "bg-[#528F62]" : " bg-[#528F62]"} `}>
         <nav className="max-w-[100rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
           <div className="flex items-center justify-between">
             <a className="flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#" aria-label="Brand">
               <Link to='/'>
-                <img className='lg:w-40 w-40 md:h-18 h-15' src="/images/home/logo-icaabc.webp" alt="LOGO" />
+                <img className='lg:w-40 w-28 md:h-18 h-12' src="/images/home/logo-icaabc.webp" alt="LOGO" />
               </Link>
             </a>
             <div className="sm:hidden">

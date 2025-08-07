@@ -37,14 +37,14 @@ function Dates() {
                     <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
                 </div>
                 <div className="flex justify-center  ">
-                    <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto">
+                    <div className="max-w-[80rem] mx-auto md:px-5 px-3">
                         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-10">
                             {deadlines.map((item, index) => (
                                 <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white p-6"   >
                                     <p className="text-[20px] mt-2  text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110  ">
                                         {item.date}
                                     </p>
-                                    <h2 className="text-lg text-black text-center ">
+                                    <h2 className="text-lg text-black text-center">
                                         {item.title}
                                     </h2>
                                 </div>

@@ -90,7 +90,7 @@ export default function HeroSection({ data }) {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
                   <div className="text-lg lg:text-[19px] mb-4 text-justify">
                     <h1 className="md:text-2xl mb-2 text-[#528F62] font-semibold">Artificial Intelligence</h1>
-                    <div className="md:text-lg text-base">
+                    <div className="2xl:text-lg text-base">
                       <ul className="list-disc list-inside flex flex-col gap-2">
                         <li>Machine Learning & Deep Learning</li>
                         <li>Natural Language Processing (NLP)</li>
@@ -102,7 +102,7 @@ export default function HeroSection({ data }) {
                   </div>
                   <div className="text-lg lg:text-[19px] mb-4 text-justify">
                     <h1 className="md:text-2xl mb-2 text-[#528F62] font-semibold">Business Analytics</h1>
-                    <div className="md:text-lg text-base">
+                    <div className="2xl:text-lg text-base">
                       <ul className="list-disc list-inside flex flex-col gap-2">
                         <li>Predictive & Prescriptive Analytics</li>
                         <li>Data Mining & Decision Support Systems</li>
@@ -114,7 +114,7 @@ export default function HeroSection({ data }) {
                   </div>
                   <div className="text-lg lg:text-[19px] mb-4 text-justify">
                     <h1 className="md:text-2xl mb-2 text-[#528F62] font-semibold"> Cloud Systems</h1>
-                    <div className="md:text-lg text-base">
+                    <div className="2xl:text-lg text-base">
                       <ul className="list-disc list-inside flex flex-col gap-2">
                         <li>Cloud Infrastructure & Virtualization</li>
                         <li>Cloud Security & Privacy</li>
@@ -130,12 +130,12 @@ export default function HeroSection({ data }) {
           </div>
         </section>
         <section className="text-center">
-          <div className="max-w-6xl mx-auto text-center ">
+          <div className="  mx-auto text-center ">
             <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">Key Dates</h2>
             <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
           </div>
           <div className="flex justify-center  ">
-            <div className="max-w-[90%] lg:max-w-[80%] 2xl:max-w-[70%] mx-auto">
+            <div className="max-w-[80rem] mx-auto md:px-5 px-3">
               <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-10">
                 {deadlines.map((item, index) => (
                   <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 bg-white p-6"   >

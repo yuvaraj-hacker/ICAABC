@@ -33,7 +33,6 @@ function Submission() {
         e.preventDefault();
         setStatus('Sending...');
         const journalName = 'icacsit';
-        // Generate unique ID: journalName + YYYYMMDD + HHMMSS
         const now = new Date();
         const dateStr = now.toISOString().slice(0, 10).replace(/-/g, ''); // YYYYMMDD
         const timeStr = now.toTimeString().slice(0, 8).replace(/:/g, ''); // HHMMSS
@@ -121,7 +120,7 @@ function Submission() {
                     <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Paper Submission</h2>
                 </div>
                 <div className="w-full  max-w-[75rem] px-4 flex flex-col lg:flex-row gap-8 items-center justify-center mx-auto">
-                    <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-2xl p-8 order-1 lg:order-2 border-t-4 border-b-4 border-[#528F62]">
+                    <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-md p-8 order-1 lg:order-2 border-t-4 border-b-4 border-[#528F62]">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Submission Guidelines</h2>
                         <ul className="space-y-3 text-gray-700">
                             <li>Papers must be written in English.</li>
@@ -141,7 +140,7 @@ function Submission() {
                             <li>Papers will be published in the conference proceedings.</li>
                         </ul>
                     </div>
-                    <div className="w-full lg:w-2/3 bg-white shadow-lg rounded-2xl p-8 border-t-4 border-b-4 border-[#528F62] order-2 lg:order-1">
+                    <div className="w-full lg:w-2/3 bg-white shadow-lg rounded-md p-8 border-t-4 border-b-4 border-[#528F62] order-2 lg:order-1">
                         <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="Paper_Title" className="block text-lg font-medium text-gray-700">Paper Title</label>

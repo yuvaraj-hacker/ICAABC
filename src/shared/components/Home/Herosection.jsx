@@ -39,41 +39,47 @@ export default function HeroSection({ data }) {
     <>
       <section className="bg-[#F3F4F6]">
         <section className="bg-[#528F62] px-5 md:py-10 h-full">
-          <div className="w-full xl:w-[85%] 2xl:w-[65%] mx-auto flex flex-col items-center md:py-10 py-10">
+          <div className="w-full xl:w-[85%] 2xl:w-[65%] mx-auto flex flex-col items-center md:py-10 py-18  md:h-auto  ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div className="text-center lg:text-left">
-                <h1 className="text-white font-bold py-5 md:text-4xl text-xl leading-tight">
+                <h1 className="text-white font-bold md:py-0 mb-5   md:text-4xl text-xl leading-tight">
                   International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025
                 </h1>
-                <p className="text-white text-[clamp(1rem,2vw,1.25rem)] pb-5 leading-relaxed">
-                  Date: February 16, 2026 <br />
-                  Venue: Seoul, South Korea
-                </p>
                 <Link to='/paper-submission'>
                   <button className="border border-white md:px-6 px-4 md:py-3 py-2 rounded-full text-[#528F62] hover:scale-95 duration-300 bg-white transition text-lg md:text-lg cursor-pointer">
                     Register Now
                   </button>
                 </Link>
               </div>
-              <div className="flex justify-center">
-                <img alt="Venue" src="/images/home/icaabc.webp" className="rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-cover xl:max-w-xl 2xl:max-w-2xl" />
+              <div className="flex justify-center flex-col w-fit">
+                <img alt="Venue" src="/images/home/icaabc.webp" className="rounded-t-md w-full border-t-4  border-t-white object-cover xl:max-w-xl 2xl:max-w-2xl" />
+                <div className="bg-white p-4 w-full rounded-b-md text-center">
+                  <div className="text-[#528F62] font-medium text-[clamp(1rem,2vw,1.25rem)] underline underline-offset-2  leading-relaxed flex md:flex-row justify-center flex-col">
+                    <div>
+                      Date:  February 16, 2026
+                    </div> <span className=" px-4 md:block hidden">|</span>
+                    <div>
+                      Venue: Seoul, South Korea
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section className="py-10 flex flex-col gap-10">
-          <section className="  ">
+          <section className=" ">
             <div className="container w-full xl:w-[90%] 2xl:w-[65%] mx-auto px-4 sm:px-6 lg:px-6">
               <div className="max-w-6xl mx-auto text-center">
                 <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">About Us</h2>
                 <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 items-center">
                 <div>
                   <p className="text-base lg:text-lg mb-4 text-justify">The International Conference on Advances in AI, Business Analytics, and Cloud Systems is a premier global event uniting researchers, industry experts, and academics to explore innovations in AI, Business Analytics, and Cloud Systems. Featuring keynote speeches, technical sessions, workshops, and industry panels, ICAABC addresses cutting-edge topics like machine learning, data analytics, cloud security, and AI ethics. The conference fosters collaboration, knowledge sharing, and practical solutions to real-world challenges. Whether you're a researcher, practitioner, or student, ICAABC offers a platform to network, learn, and contribute to the future of technology and business. Join us to shape the next wave of innovation!              </p>
                 </div>
                 <div className="flex justify-center items-center">
-                  <img alt="About Image" className="rounded-lg shadow-lg w-full h-full  " src="/images/home/aboutimage.webp" />
+                  <img alt="About Image" className="rounded-md shadow-lg w-full h-full  " src="/images/home/aboutimage.webp" />
                 </div>
               </div>
             </div>
@@ -137,9 +143,9 @@ export default function HeroSection({ data }) {
             </div>
             <div className="flex justify-center">
               <div className="max-w-[80rem] mx-auto md:px-5 px-3">
-                <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-5">
                   {deadlines.map((item, index) => (
-                    <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-xl shadow-lg border border-[#528F62] hover:shadow-2xl transition-all duration-300 bg-white p-6"   >
+                    <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-md shadow-lg border-y-4 border-[#528F62] hover:shadow-2xl transition-all duration-300 bg-white p-4"   >
                       <p className="md:text-[20px] mt-2  text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110  ">
                         {item.date}
                       </p>

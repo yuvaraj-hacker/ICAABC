@@ -57,7 +57,7 @@ function ConferenceTracks() {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 xl:grid-cols-3 gap-8 md:pb-5 pb-14">
                         {tracks.map((track, index) => (
-                            <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-left">
+                            <div key={index} className="bg-white p-6 rounded-md shadow-md border-y-4 border-y-[#528F62] hover:shadow-xl transition text-left">
                                 <h3 className="text-xl font-semibold text-green-700 mb-2">{track.title}</h3>
                                 <p className="text-gray-700 text-[17px]">{track.description}</p>
                             </div>

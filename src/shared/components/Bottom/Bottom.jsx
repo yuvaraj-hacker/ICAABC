@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactSection = () => {
     return (
-        <section className="bg-gray-100 border-t" id="contact">
-            <div className="py-10 px-6 md:px-6 mx-auto max-w-[80rem]  ">
+        <section className="bg-gray-100" id="contact">
+            <div className="pb-14 px-6 md:px-6 mx-auto max-w-[80rem]">
                 <div className="max-w-6xl mx-auto text-center">
                     <h2 className="md:text-3xl text-xl font-semibold text-[#528F62] mb-4">Contact</h2>
                     <div className="border-t-2 border-[#528F62] w-16 mx-auto mb-8"></div>
@@ -11,7 +11,7 @@ const ContactSection = () => {
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
                     <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
                         <div className="mb-4">
-                            <h3 className="text-xl font-semibold text-[#528F62] flex items-center  mb-3 ">
+                            <h3 className="text-xl font-semibold text-[#528F62] flex items-center mb-3">
                                 <GlobeIcon className="mr-2 text-[#528F62]" />
                                 About International Forum
                             </h3>

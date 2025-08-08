@@ -60,7 +60,7 @@ const Header = () => {
               </Link>
             </a>
             <div className="sm:hidden">
-              <button type="button" className="hs-collapse-toggle relative flex justify-center items-center gap-x-2 rounded-lg shadow-2xs focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent "
+              <button type="button" className="hs-collapse-toggle relative flex justify-center items-center gap-x-2   focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent "
                 id="hs-navbar-example-collapse" aria-expanded={menuOpen ? "true" : "false"} aria-controls="hs-navbar-example" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example" onClick={() => setMenuOpen(!menuOpen)} >
                 <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={20} color={menuOpen ? "#fff" : "#fff"} direction="right" />
                 <span className="sr-only">Toggle navigation</span>
@@ -73,10 +73,32 @@ const Header = () => {
                 Home
               </a>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
-                <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
+                {/* <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
                   About Us
-                  <i className={`fi fi-sr-angle-circle-down transform transition-transform text-sm duration-200  ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
+                  <i className={`fi fi-sr-angle-circle-down transform transition-transform duration-200  text-xl ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
+                </button> */}
+                <button
+                  id="hs-navbar-example-dropdown"
+                  type="button"
+                  onClick={toggleDropdown}
+                  className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer transition-all duration-300 ${isDropdownOpen ? 'text-blue-400' : ''}`}
+                  aria-haspopup="menu"
+                  aria-expanded={isDropdownOpen}
+                  aria-label="Mega Menu"
+                >
+                  About Us
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
                 </button>
+
                 <div className="hs-dropdown-menu border border-white sm:mt-0 mt-5 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white  before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
                   <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-black  font-medium" href="/about">
@@ -93,8 +115,16 @@ const Header = () => {
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
                 <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
                   Author Desk's
-                  <i className={`fi fi-sr-angle-circle-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
-                </button>
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>                </button>
                 <div className="hs-dropdown-menu  border border-white sm:mt-0 mt-5  transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
                   <a to='/conference-tracks' onClick={() => setIsDropdownOpe(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-black   font-medium" href="/conference-tracks">

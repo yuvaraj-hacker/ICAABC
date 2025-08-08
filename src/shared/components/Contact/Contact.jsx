@@ -46,7 +46,7 @@ function Contact() {
                         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Contact Us</h2>
                     </div>
                     <div className="grid md:grid-cols-1 gap-5 grid-cols-1  px-6 w-full max-w-[40rem]">
-                        <div className="flex flex-col gap-4 md:gap-6 md:px-9 bg-white p-4 md:p-8 rounded-xl shadow-lg w-full border-y-3 border-[#528F62]">
+                        <div className="flex flex-col gap-4 md:gap-6 md:px-9 bg-white p-4 md:p-8 rounded-md shadow-lg w-full border-y-3 border-[#528F62]">
                             <h1 className="md:text-xl text-lg    font-medium   text-[#528F62] text-center">Send us a Message</h1>
                             <form className="space-y-4" onSubmit={handleSubmit}>
                                 <div className='flex flex-col gap-2'>

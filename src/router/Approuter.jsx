@@ -18,7 +18,7 @@ export default function Approuter() {
             <BrowserRouter>
                 <ScrollToTop />
                 <Routes>
-                       <Route element={<Main />}>
+                    <Route element={<Main />}>
                         <Route path='/' element={<Hompage />} />
                         <Route path='/about' element={<AboutPage />} />
                         <Route path='/scope' element={<ScopePage />} />

@@ -79,7 +79,7 @@ export default function HeroSection({ data }) {
                   <p className="text-base lg:text-lg mb-4 text-justify">The International Conference on Advances in AI, Business Analytics, and Cloud Systems is a premier global event uniting researchers, industry experts, and academics to explore innovations in AI, Business Analytics, and Cloud Systems. Featuring keynote speeches, technical sessions, workshops, and industry panels, ICAABC addresses cutting-edge topics like machine learning, data analytics, cloud security, and AI ethics. The conference fosters collaboration, knowledge sharing, and practical solutions to real-world challenges. Whether you're a researcher, practitioner, or student, ICAABC offers a platform to network, learn, and contribute to the future of technology and business. Join us to shape the next wave of innovation!              </p>
                 </div>
                 <div className="flex justify-center items-center">
-                  <img alt="About Image" className="rounded-md shadow-lg w-full h-full  " src="/images/home/aboutimage.webp" />
+                  <img alt="About Image" className="rounded-md shadow-lg w-full h-full" src="/images/home/aboutimage.webp" />
                 </div>
               </div>
             </div>

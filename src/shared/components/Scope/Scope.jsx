@@ -13,24 +13,26 @@ function Scope() {
                                     Scope of the Conference
                                 </h1>
                             </div>
-                            <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15 bg-white md:p-6 p-3 shadow-lg rounded-lg">
-                                <div className="w-full grid lg:grid-cols-3 gap-6 items-center">
-                                    <div className='lg:col-span-1  mx-auto '>
-                                        <img src="/images/home/scope-of-conference.webp" className='rounded-lg mx-auto' alt="" />
-                                    </div>
-                                    <div className='lg:col-span-2'>
-                                        <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
-                                            The International Conference on Advances in AI, Business Analytics, and Cloud Systems (ICAABC) 2025 aims to bring together researchers, industry professionals, and academicians to explore cutting-edge innovations and applications in the intersecting domains of Artificial Intelligence (AI), Business Analytics, and Cloud Computing. The conference provides a platform to discuss advancements in AI models, intelligent decision-making systems, and emerging trends in data-driven analytics that empower organizations to optimize operations and create business value.
-                                        </p>
-                                        <p className=" text-justify md:text-[18px] leading-relaxed">
-                                            ICAABC 2025 will also focus on scalable, secure, and efficient cloud-based infrastructures that support modern AI and analytics solutions. Emphasis will be placed on topics such as machine learning deployment on cloud platforms, real-time analytics, edge-cloud synergy, and ethical AI. Through technical sessions, paper presentations, and expert panels, the conference encourages collaboration, knowledge sharing, and the development of integrated systems that drive innovation in today's data-centric world.
-                                        </p>
+                            <div className='md:px-3 px-2'>
+                                <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15 bg-white md:p-6 p-3 shadow-lg rounded-lg">
+                                    <div className="w-full grid lg:grid-cols-3 gap-6 items-center">
+                                        <div className='lg:col-span-1  mx-auto '>
+                                            <img src="/images/home/scope-of-conference.webp" className='rounded-lg mx-auto' alt="" />
+                                        </div>
+                                        <div className='lg:col-span-2'>
+                                            <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
+                                                The International Conference on Advances in AI, Business Analytics, and Cloud Systems (ICAABC) 2025 aims to bring together researchers, industry professionals, and academicians to explore cutting-edge innovations and applications in the intersecting domains of Artificial Intelligence (AI), Business Analytics, and Cloud Computing. The conference provides a platform to discuss advancements in AI models, intelligent decision-making systems, and emerging trends in data-driven analytics that empower organizations to optimize operations and create business value.
+                                            </p>
+                                            <p className=" text-justify md:text-[18px] leading-relaxed">
+                                                ICAABC 2025 will also focus on scalable, secure, and efficient cloud-based infrastructures that support modern AI and analytics solutions. Emphasis will be placed on topics such as machine learning deployment on cloud platforms, real-time analytics, edge-cloud synergy, and ethical AI. Through technical sessions, paper presentations, and expert panels, the conference encourages collaboration, knowledge sharing, and the development of integrated systems that drive innovation in today's data-centric world.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <div className='max-w-[80rem] mx-auto md:px-3 px-2'>
+                    <div className='max-w-[80rem] mx-auto md:px-3 px-2 md:pb-5 pb-12'>
                         <div className="text-center">
                             <h1 className="text-2xl md:text-4xl font-bold md:pb-6 text-[#528F62] relative inline-block after:content-[''] after:block after:w-40 ">
                                 Focused Areas of Conference

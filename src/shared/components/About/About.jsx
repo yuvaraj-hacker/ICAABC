@@ -35,7 +35,7 @@ function About() {
                 </section>
                 <section className=''>
                     <section>
-                        <div className="md:py-5 pt-10 md:pt-5">
+                        <div className="md:py-14 py-14 pt-14 md:pt-5">
                             <div className="text-center">
                                 <h1 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">
                                     Vision of the Conference

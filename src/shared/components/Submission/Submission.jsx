@@ -170,14 +170,14 @@ function Submission() {
                     </div>
                 </section>
             </section > */}
-            <section className="bg-gray-100 pb-10" id="paper-submission">
+            <section className="bg-gray-100 pb-14" id="paper-submission">
                 <div className="pt-10 px-6 xl:px-20 w-full xl:w-[70%] mx-auto">
                     <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Paper Submission</h2>
                 </div>
                 <div className="w-full  max-w-[75rem] px-4 flex flex-col lg:flex-row gap-8 items-center justify-center mx-auto">
                     <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-2xl p-8 order-1 lg:order-2 border-t-4 border-b-4 border-[#528F62]">
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Submission Guidelines</h2>
-                        <ul className="space-y-3 text-gray-700">
+                         <ul className="space-y-3 text-gray-700">
                             <li>Papers must be written in English.</li>
                             <li>Maximum length: 8 pages including figures and references.</li>
                             <li>Use the conference format.</li>

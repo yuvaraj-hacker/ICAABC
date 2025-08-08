@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
     return (
-        <section className="bg-gray-100" id="contact">
+        <section className="bg-gray-100 border-t" id="contact">
             <div className="py-10 px-6 md:px-6 mx-auto max-w-[80rem]  ">
                 <div className="max-w-6xl mx-auto text-center">
                     <h2 className="md:text-3xl text-xl font-semibold text-[#528F62] mb-4">Contact</h2>
@@ -10,13 +10,13 @@ const ContactSection = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 mt-8">
                     <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
-                           <div className="mb-4">
+                        <div className="mb-4">
                             <h3 className="text-xl font-semibold text-[#528F62] flex items-center  mb-3 ">
-                                <GlobeIcon className="mr-2 text-[#528F62]   " />
+                                <GlobeIcon className="mr-2 text-[#528F62]" />
                                 About International Forum
                             </h3>
                             <p className="text-gray-700 text-base lg:text-[19px] text-justify mb-6">
-                                The Tokyo International Forum is a modern conference and event center in Tokyo. It features a stunning glass atrium and sleek steel framework. It is open for exhibitions, concerts, and business events.
+                                The Seoul International Forum is a modern event venue in Seoul, South Korea, known for its sleek design and advanced facilities. It hosts conferences, exhibitions, and business events in a central, accessible location.
                             </p>
                         </div>
                         <div className="mb-6">
@@ -24,7 +24,7 @@ const ContactSection = () => {
                                 <MapPinIcon className="mr-2 text-[#528F62]" />
                                 Location
                             </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px]">Tokyo, Japan</p>
+                            <p className="text-gray-700 text-base lg:text-[18px]">Seoul, South Korea</p>
                         </div>
                     </div>
                     <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">

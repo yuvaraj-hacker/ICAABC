@@ -47,15 +47,15 @@ function ConferenceTracks() {
 
     return (
         <>
-            <div className="bg-gray-100 py-10">
+            <div className="bg-gray-100 md:py-10 pt-10  ">
                 <div className="max-w-[80rem] mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">Conference Tracks</h2>
-                    <div className="text-left mb-12 ">
-                        <p className="text-black text-center text-lg">
+                    <h2 className="md:text-3xl text-2xl font-bold text-green-700 md:mb-6 mb-3  text-center">Conference Tracks</h2>
+                    <div className="text-left md:mb-12 mb-5 ">
+                        <p className="text-black text-center md:text-lg">
                             Explore diverse and innovative research areas at the intersection of artificial intelligence, business analytics, and cloud systems. The conference invites original contributions in, but not limited to, the following tracks:
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 xl:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 xl:grid-cols-3 gap-8 md:pb-5 pb-14">
                         {tracks.map((track, index) => (
                             <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition text-left">
                                 <h3 className="text-xl font-semibold text-green-700 mb-2">{track.title}</h3>

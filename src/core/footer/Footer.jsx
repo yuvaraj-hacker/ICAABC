@@ -13,13 +13,13 @@ export default function Footer() {
                   <img className='lg:w-40 w-40 md:h-18 h-15' src="/images/home/logo-icaabc.webp" alt="LOGO" />
                 </Link>
               </a>
-              <p className="">The International Conference on Advances in AI, Business Analytics, and Cloud Systems brings together global experts to share innovations in AI, business analytics, and cloud technologies.</p>
+              {/* <p className="">The International Conference on Advances in AI, Business Analytics, and Cloud Systems brings together global experts to share innovations in AI, business analytics, and cloud technologies.</p> */}
             </div>
             <div className="text-left">
               <h3 className="text-xl font-bold text-white mb-3">Conference Information</h3>
               <ul className="space-y-2 md:text-base">
                 <li>
-                   <a className=" " href="/">Home</a>
+                  <a className=" " href="/">Home</a>
                 </li>
                 <li>
                   <a className=" " href="/about">About the Conference</a>
@@ -39,7 +39,7 @@ export default function Footer() {
                   Email: <a href="mailto:support@acsitconference.com" className="">contact.icacsit@gmail.com</a>
                 </li>
                 <li>
-                  Location: Abuja, Nigeria
+                  Location: Seoul, South Korea
                 </li>
               </ul>
             </div>

@@ -1,4 +1,4 @@
-import { Sling as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from 'hamburger-react'
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import 'preline/preline';
@@ -8,6 +8,8 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpe, setIsDropdownOpe] = useState(false);
+  const dropdownRef = useRef(null);
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
@@ -26,11 +28,25 @@ const Header = () => {
     const onScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   const isHome = location.pathname === '/';
+
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+        setIsDropdownOpe(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -51,19 +67,19 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse"   >
+          <div id="hs-navbar-example" ref={dropdownRef} className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse"   >
             <div className="flex flex-col gap-8 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-              <a to='/' onClick={() => setIsDropdownOpen(false)} className=" text-white focus:outline-hidden  text-base" href="/" aria-current="page">
+              <a to='/' onClick={() => setIsDropdownOpen(false)} className=" text-white focus:outline-hidden text-base" href="/" aria-current="page">
                 Home
               </a>
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
                 <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdown} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpen ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpen} aria-label="Mega Menu"  >
                   About Us
-                  <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
+                  <i className={`fi fi-sr-angle-circle-down transform transition-transform text-sm duration-200  ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`} ></i>
                 </button>
                 <div className="hs-dropdown-menu border border-white sm:mt-0 mt-5 transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white  before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
-                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-black  font-medium  " href="/about">
+                  <a to='/about' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-black  font-medium" href="/about">
                     About the Conference
                   </a>
                   <a to='/scope' onClick={() => setIsDropdownOpen(false)} className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-black font-medium" href="/scope">
@@ -77,7 +93,7 @@ const Header = () => {
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive]">
                 <button id="hs-navbar-example-dropdown" type="button" onClick={toggleDropdow} className={`hs-dropdown-toggle flex items-center w-full text-white text-base gap-1 cursor-pointer  ${isDropdownOpe ? 'text-blue-400' : ''}`} aria-haspopup="menu" aria-expanded={isDropdownOpe} aria-label="Mega Menu"   >
                   Author Desk's
-                  <i className={`fi fi-rr-angle-small-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
+                  <i className={`fi fi-sr-angle-circle-down transform transition-transform text-sm duration-200 mt-1 ${isDropdownOpe ? 'rotate-180' : 'rotate-0'}`}  ></i>
                 </button>
                 <div className="hs-dropdown-menu  border border-white sm:mt-0 mt-5  transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-56 z-10   sm:shadow-md rounded-lg p-1 space-y-1 bg-white before:absolute top-full  before:-top-5 before:start-0 before:w-full before:h-5 hidden"
                   role="menu" aria-orientation="vertical" aria-labelledby="hs-navbar-example-dropdown" >
@@ -92,7 +108,7 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-              <a className=" text-white text-base sm:pb-0 pb-5" href="/contact">
+              <a className="text-white text-base sm:pb-0 pb-5" href="/contact">
                 Contact Us
               </a>
             </div>

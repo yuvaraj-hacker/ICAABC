@@ -28,7 +28,7 @@ function Editorial() {
     ];
     return (
         <>
-            <section className='bg-[#F3F4F6] pt-10'>
+            <section className='bg-[#F3F4F6] pt-10  pb-10'>
                 <section className=' '>
                     <div className="text-center">
                         <h1 className="text-3xl md:text-4xl font-bold pb-6 text-[#528F62] relative inline-block after:content-[''] after:block after:w-40">
@@ -40,7 +40,7 @@ function Editorial() {
                             The Editorial Board of the International Conference on Advances in AI, Business Analytics, and Cloud Systems plays a crucial role in maintaining the academic integrity and excellence of the event. Our board members guide the peer-review process, ensure the highest standards of ethical publishing, and contribute strategic insights that align with the evolving frontiers of artificial intelligence, business intelligence, and cloud technologies.
                         </div>
                     </div>
-                    <div className='bg-gray-100 md:p-6 p-3 rounded-lg  w-fit   mx-auto flex flex-col md:flex-col 2xl:items-start gap-5 lg:gap-5'>
+                    <div className='bg-gray-100 md:p-6 p-3 rounded-lg w-fit   mx-auto flex flex-col md:flex-col 2xl:items-start gap-5 lg:gap-5'>
                         <div className="grid bg-white p-3 md:p-6 grid-cols-1 lg:grid-cols-2 md:gap-5 gap-5 mx-auto rounded-lg border-y-3 border-y-[#528F62]">
                             {Tech.map((member, index) => (
                                 <Edit key={index} position={member.position} department={member.department} name={member.name} location={member.location} />

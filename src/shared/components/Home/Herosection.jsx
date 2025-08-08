@@ -47,7 +47,7 @@ export default function HeroSection({ data }) {
                 </h1>
                 <Link to='/paper-submission'>
                   <button className="border border-white md:px-5 px-4 md:py-2 py-2 rounded-full text-[#528F62] hover:scale-95 duration-300 bg-white transition text-lg md:text-lg cursor-pointer">
-                      Register Now
+                    Register Now
                   </button>
                 </Link>
               </div>

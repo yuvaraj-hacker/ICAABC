@@ -68,7 +68,7 @@ export default function HeroSection({ data }) {
           </div>
         </section>
         <section className="py-10 flex flex-col gap-10">
-          <section className=" ">
+          <section className="">
             <div className="container w-full xl:w-[90%] 2xl:w-[65%] mx-auto px-4 sm:px-6 lg:px-6">
               <div className="max-w-6xl mx-auto text-center">
                 <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">About Us</h2>

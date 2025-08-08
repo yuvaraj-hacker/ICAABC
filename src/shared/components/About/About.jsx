@@ -59,12 +59,30 @@ function About() {
                             <div className='md:px-5 px-3'>
                                 <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15 ">
                                     <div className="w-full">
+                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6  mb-8 text-gray-800">
+                                            <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
+                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">AI for Societal Progress</h3>
+                                                <p className=" ">
+                                                    Encourage ethical and inclusive AI development to solve societal problems such as healthcare, education, and sustainability.
+                                                </p>
+                                            </div>
+                                            <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
+                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">Data-Driven Business Intelligence</h3>
+                                                <p className=" ">
+                                                    Promote innovation in business analytics for better decision-making, forecasting, and competitive advantage across industries.
+                                                </p>
+                                            </div>
+                                            <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
+                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">Scalable Cloud Solutions</h3>
+                                                <p className=" ">
+                                                    Support research on scalable, secure, and intelligent cloud infrastructures that drive digital transformation globally.
+                                                </p>
+                                            </div>
+                                        </div>
                                         <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
                                             The vision of the International Conference on Advances in AI, Business Analytics, and Cloud Systems (ICAABC 2025) is to foster a transformative ecosystem that empowers innovation, interdisciplinary research, and practical solutions in the era of intelligent technologies. Our aim is to become a leading global platform where academia, industry, and policy converge to address real-world challenges through the seamless integration of Artificial Intelligence, data-driven analytics, and scalable cloud infrastructure.
                                         </p>
-                                        <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
-                                            ICAABC 2025 envisions a future where AI and analytics are responsibly embedded into every aspect of society — from business intelligence and automation to sustainable development and ethical computing. The conference is committed to inspiring thought leadership, nurturing collaboration, and enabling breakthrough innovations that accelerate digital transformation while upholding social and economic inclusivity.
-                                        </p>
+
                                         <p className="  text-justify md:text-[18px] leading-relaxed">
                                             By providing a dynamic environment for researchers, practitioners, and change-makers, ICAABC 2025 aims to spark meaningful conversations and cultivate partnerships that contribute to building resilient, intelligent, and future-ready systems for tomorrow’s world.
                                         </p>

@@ -34,7 +34,7 @@ function Dates() {
             <section className="  text-center  md:py-10 pt-10 bg-gray-100" >
                 <div className="max-w-6xl mx-auto text-center ">
                     <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">Key Dates</h2>
-                    <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
+                    {/* <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div> */}
                 </div>
                 <div className="flex justify-center  pb-14 md:pb-5">
                     <div className="max-w-[80rem] mx-auto md:px-5 px-3">

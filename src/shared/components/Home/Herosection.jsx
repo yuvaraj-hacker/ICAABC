@@ -72,7 +72,7 @@ export default function HeroSection({ data }) {
             <div className="container w-full xl:w-[90%] 2xl:w-[65%] mx-auto px-4 sm:px-6 lg:px-6">
               <div className="max-w-6xl mx-auto text-center">
                 <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">About Us</h2>
-                <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
+                {/* <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div> */}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 items-center">
                 <div>
@@ -88,7 +88,7 @@ export default function HeroSection({ data }) {
             <div className="container w-full xl:w-[90%] 2xl:w-[65%] mx-auto px-4 sm:px-6 lg:px-6">
               <div className="max-w-6xl mx-auto text-center">
                 <h2 className="md:text-3xl  text-xl font-semibold text-green-700 mb-4">Scope of the Conference</h2>
-                <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
+                {/* <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div> */}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                 <div>
@@ -139,7 +139,7 @@ export default function HeroSection({ data }) {
           <section className="text-center mb-3">
             <div className="mx-auto text-center">
               <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">Key Dates</h2>
-              <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div>
+              {/* <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div> */}
             </div>
             <div className="flex justify-center">
               <div className="max-w-[80rem] mx-auto md:px-5 px-3">

@@ -62,7 +62,20 @@ const Header = () => {
             <div className="sm:hidden">
               <button type="button" className="hs-collapse-toggle relative flex justify-center items-center gap-x-2   focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent "
                 id="hs-navbar-example-collapse" aria-expanded={menuOpen ? "true" : "false"} aria-controls="hs-navbar-example" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example" onClick={() => setMenuOpen(!menuOpen)} >
-                <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={20} color={menuOpen ? "#fff" : "#fff"} direction="right" />
+                {/* <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={20} color={menuOpen ? "#fff" : "#fff"} direction="right" /> */}
+                <button onClick={() => setMenuOpen(!menuOpen)} className="p-2">
+                  {!menuOpen ? (
+                    <svg viewBox="0 0 100 80" width="30" height="30" className="text-white fill-current">
+                      <rect width="100" height="8" rx="5"></rect>
+                      <rect y="30" width="100" height="8" rx="5"></rect>
+                      <rect y="60" width="100" height="8" rx="5"></rect>
+                    </svg>
+                  ) : (
+                    <svg viewBox="0 0 24 24" width="30" height="30" className="text-white fill-current">
+                      <path d="M18.3 5.71a1 1 0 00-1.41 0L12 10.59 7.11 5.7A1 1 0 105.7 7.11L10.59 12l-4.89 4.89a1 1 0 101.41 1.41L12 13.41l4.89 4.89a1 1 0 001.41-1.41L13.41 12l4.89-4.89a1 1 0 000-1.4z" />
+                    </svg>
+                  )}
+                </button>
                 <span className="sr-only">Toggle navigation</span>
               </button>
             </div>

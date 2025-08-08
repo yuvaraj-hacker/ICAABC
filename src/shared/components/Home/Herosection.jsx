@@ -46,8 +46,8 @@ export default function HeroSection({ data }) {
                   International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025
                 </h1>
                 <Link to='/paper-submission'>
-                  <button className="border border-white md:px-6 px-4 md:py-3 py-2 rounded-full text-[#528F62] hover:scale-95 duration-300 bg-white transition text-lg md:text-lg cursor-pointer">
-                    Register Now
+                  <button className="border border-white md:px-5 px-4 md:py-2 py-2 rounded-full text-[#528F62] hover:scale-95 duration-300 bg-white transition text-lg md:text-lg cursor-pointer">
+                      Register Now
                   </button>
                 </Link>
               </div>

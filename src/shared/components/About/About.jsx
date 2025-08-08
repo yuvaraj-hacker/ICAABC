@@ -9,22 +9,22 @@ function About() {
                     <section>
                         <div className="md:py-10  pt-10 md:pt-10">
                             <div className="text-center">
-                                <h1 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">
+                                <h1 className="md:text-3xl text-xl font-bold text-green-700 mb-4">
                                     About the Conference
                                 </h1>
                             </div>
                             <div className='md:px-5 px-3'>
                                 <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15   ">
                                     <div className="w-full">
-                                        <div className='grid grid-cols-3 gap-4 items-center mb-3'>
-                                            <div className='col-span-1'>
+                                        <div className='grid lg:grid-cols-3 gap-4 items-center mb-3'>
+                                            <div className='lg:col-span-1'>
                                                 <img src="/images/home/aboutimage.webp" className='rounded-md' alt="" />
                                             </div>
-                                            <div className='col-span-2'>
+                                            <div className='lg:col-span-2'>
                                                 <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed ">
                                                     The International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025 is a globally recognized platform that brings together leading researchers, industry professionals, and academic scholars to explore the rapid developments in artificial intelligence, data analytics, and cloud technologies. With the digital landscape evolving faster than ever, this conference aims to bridge the gap between theoretical research and real-world implementation.
                                                 </p>
-                                                <div className="bg-white p-4  rounded-md text-center border-y-4 border-[#528F62] w-fit">
+                                                <div className="bg-white p-4  rounded-md text-center border-y-4 border-[#528F62] w-fit  ">
                                                     <div className="text-[#528F62] font-medium text-[clamp(1rem,2vw,1.25rem)] underline underline-offset-2  leading-relaxed flex md:flex-row justify-center flex-col">
                                                         <div>
                                                             Date:  February 16, 2026
@@ -50,9 +50,9 @@ function About() {
                 </section>
                 <section className=''>
                     <section>
-                        <div className="md:py-14 py-14 pt-14 md:pt-0">
+                        <div className="md:py-14 py-14 pt-8 md:pt-0">
                             <div className="text-center">
-                                <h1 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">
+                                <h1 className="md:text-3xl text-xl font-bold text-green-700 mb-4">
                                     Vision of the Conference
                                 </h1>
                             </div>
@@ -61,20 +61,20 @@ function About() {
                                     <div className="w-full">
                                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6  mb-8 text-gray-800">
                                             <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
-                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">AI for Societal Progress</h3>
-                                                <p className=" ">
+                                                <h3 className="md:text-lg font-medium   mb-2 text-[#5B956A]">AI for Societal Progress</h3>
+                                                <p className="md:text-lg ">
                                                     Encourage ethical and inclusive AI development to solve societal problems such as healthcare, education, and sustainability.
                                                 </p>
                                             </div>
                                             <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
-                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">Data-Driven Business Intelligence</h3>
-                                                <p className=" ">
+                                                <h3 className="md:text-lg font-medium   mb-2 text-[#5B956A]">Data-Driven Business Intelligence</h3>
+                                                <p className="md:text-lg ">
                                                     Promote innovation in business analytics for better decision-making, forecasting, and competitive advantage across industries.
                                                 </p>
                                             </div>
                                             <div className="bg-white shadow-md rounded-md p-6 border-y-4 border-[#528F62]  transition duration-300">
-                                                <h3 className="text-xl font-bold text-[#528F62] mb-2">Scalable Cloud Solutions</h3>
-                                                <p className=" ">
+                                                <h3 className="md:text-lg font-medium   mb-2 text-[#5B956A]">Scalable Cloud Solutions</h3>
+                                                <p className=" md:text-lg">
                                                     Support research on scalable, secure, and intelligent cloud infrastructures that drive digital transformation globally.
                                                 </p>
                                             </div>

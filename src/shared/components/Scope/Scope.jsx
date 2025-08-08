@@ -9,7 +9,7 @@ function Scope() {
                     <section>
                         <div className="py-10 pt-10 md:pt-10">
                             <div className="text-center">
-                                <h1 className="text-2xl md:text-4xl font-bold pb-6 text-[#528F62] relative inline-block after:content-[''] after:block after:w-40 ">
+                                <h1 className="text-2xl md:text-4xl font-bold pb-6 text-green-700 relative inline-block after:content-[''] after:block after:w-40 ">
                                     Scope of the Conference
                                 </h1>
                             </div>
@@ -34,7 +34,7 @@ function Scope() {
                     </section>
                     <div className='max-w-[80rem] mx-auto md:px-3 px-2 md:pb-5 pb-12'>
                         <div className="text-center">
-                            <h1 className="text-2xl md:text-4xl font-bold md:pb-6 text-[#528F62] relative inline-block after:content-[''] after:block after:w-40 ">
+                            <h1 className="text-2xl md:text-4xl font-bold md:pb-6 text-green-700 relative inline-block after:content-[''] after:block after:w-40 ">
                                 Focused Areas of Conference
                             </h1>
                         </div>

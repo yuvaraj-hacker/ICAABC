@@ -31,7 +31,7 @@ function Editorial() {
             <section className='bg-[#F3F4F6] pt-10  pb-10'>
                 <section className=' '>
                     <div className="text-center">
-                        <h1 className="text-3xl md:text-4xl font-bold pb-6 text-[#528F62] relative inline-block after:content-[''] after:block after:w-40">
+                        <h1 className="text-3xl md:text-4xl font-bold pb-6 text-green-700 relative inline-block after:content-[''] after:block after:w-40">
                             Editorial Board
                         </h1>
                     </div>

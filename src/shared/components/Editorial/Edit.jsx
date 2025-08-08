@@ -7,7 +7,7 @@ function Edit({ position, name, location, department }) {
                 <table className="table-auto min-w-full border border-gray-200 shadow-sm rounded-lg">
                     <div>
                         <div className="border-b p-3 ">
-                            <div className="font-medium ">Dr. {name}</div>
+                            <div className="font-semibold">Dr. {name}</div>
                             <div className=" "> {department}, </div>
                             <div className=" "> {position}, {location} </div>
                             {/* <div className=" "> {location} </div> */}

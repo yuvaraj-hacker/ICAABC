@@ -5,27 +5,27 @@ function Dates() {
     const deadlines = [
         {
             title: 'Full Paper Submission Deadline',
-            date: '2025-January-01',
+            date: '2026-January-01',
         },
         {
             title: 'Notification of Decision',
-            date: '2025-January-10',
+            date: '2026-January-10',
         },
         {
             title: 'Deadline for Submitting Revised Full Paper',
-            date: '2025-January-18',
+            date: '2026-January-18',
         },
         {
             title: 'Notification of Acceptance',
-            date: '2025-January-25',
+            date: '2026-January-25',
         },
         {
             title: 'Camera-Ready Submission',
-            date: '2025-February-05',
+            date: '2026-February-05',
         },
         {
             title: 'Last Date for Registration',
-            date: '2025-February-13',
+            date: '2026-February-13',
         },
     ];
 

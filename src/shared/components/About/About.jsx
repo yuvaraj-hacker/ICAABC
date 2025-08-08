@@ -24,7 +24,7 @@ function About() {
                                         </p>
                                         <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
                                             Participants will gain valuable insights into how AI and analytics are driving smarter decision-making, while scalable cloud systems are enabling seamless digital transformation. Real-world case studies, demos, and interactive sessions will showcase how businesses and institutions are leveraging these technologies to solve complex challenges and unlock new opportunities.                                    </p>
-                                        <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
+                                        <p className="  text-justify md:text-[18px] leading-relaxed">
                                             ICAABC 2025 is more than just a conference — it's a hub for forward-thinking dialogue, knowledge exchange, and strategic networking. Whether you're a researcher, data scientist, cloud architect, entrepreneur, or policy-maker, this event offers the opportunity to engage with the global tech community and contribute to shaping the future of intelligent, data-driven systems.
                                         </p>
                                     </div>
@@ -50,7 +50,7 @@ function About() {
                                         <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
                                             ICAABC 2025 envisions a future where AI and analytics are responsibly embedded into every aspect of society — from business intelligence and automation to sustainable development and ethical computing. The conference is committed to inspiring thought leadership, nurturing collaboration, and enabling breakthrough innovations that accelerate digital transformation while upholding social and economic inclusivity.
                                         </p>
-                                        <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
+                                        <p className="  text-justify md:text-[18px] leading-relaxed">
                                             By providing a dynamic environment for researchers, practitioners, and change-makers, ICAABC 2025 aims to spark meaningful conversations and cultivate partnerships that contribute to building resilient, intelligent, and future-ready systems for tomorrow’s world.
                                         </p>
                                     </div>

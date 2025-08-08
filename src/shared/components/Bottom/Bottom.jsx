@@ -34,7 +34,7 @@ const ContactSection = () => {
                                 When
                             </h3>
                             <p className="text-gray-700 text-base lg:text-[19px]">
-                                September 25, 2025 <br />
+                                February 16, 2026 <br />
                                 9:00 AM - 5:00 PM
                             </p>
                         </div>

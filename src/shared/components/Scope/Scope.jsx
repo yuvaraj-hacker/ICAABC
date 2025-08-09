@@ -17,15 +17,15 @@ function Scope() {
                                 <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15    ">
                                     <div className="w-full grid lg:grid-cols-3 gap-6 items-center">
                                         <div className='lg:col-span-1  mx-auto '>
-                                            <img src="/images/home/scope.png" className='rounded-md mx-auto' alt="" />
+                                            <img src="/images/home/scopes.png" rel='preload' className='rounded-md mx-auto transform scale-x-[-1]' alt="" />
                                         </div>
                                         <div className='lg:col-span-2'>
                                             <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
-                                                The International Conference on Advances in AI, Business Analytics, and Cloud Systems (ICAABC) 2025 aims to bring together researchers, industry professionals, and academicians to explore cutting-edge innovations and applications in the intersecting domains of Artificial Intelligence (AI), Business Analytics, and Cloud Computing. The conference provides a platform to discuss advancements in AI models, intelligent decision-making systems, and emerging trends in data-driven analytics that empower organizations to optimize operations and create business value.
+                                                The International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025 aims to bring together researchers, industry professionals, and academicians to explore cutting-edge innovations and applications in the intersecting domains of Artificial Intelligence (AI), Business Analytics, and Cloud Computing. The conference provides a platform to discuss advancements in AI models, intelligent decision-making systems, and emerging trends in data-driven analytics that empower organizations to optimize operations and create business value.
                                             </p>
-                                            <p className=" text-justify md:text-[18px] leading-relaxed">
+                                            {/* <p className=" text-justify md:text-[18px] leading-relaxed">
                                                 ICAABC 2025 will also focus on scalable, secure, and efficient cloud-based infrastructures that support modern AI and analytics solutions. Emphasis will be placed on topics such as machine learning deployment on cloud platforms, real-time analytics, edge-cloud synergy, and ethical AI. Through technical sessions, paper presentations, and expert panels, the conference encourages collaboration, knowledge sharing, and the development of integrated systems that drive innovation in today's data-centric world.
-                                            </p>
+                                            </p> */}
                                         </div>
                                     </div>
                                 </div>

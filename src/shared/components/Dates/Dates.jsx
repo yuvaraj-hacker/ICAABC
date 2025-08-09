@@ -34,14 +34,13 @@ function Dates() {
             <section className="text-center md:py-10 pt-10 bg-gray-100">
                 <div className="max-w-6xl mx-auto text-center">
                     <h2 className="md:text-3xl text-xl font-semibold text-green-700 mb-4">Key Dates</h2>
-                    {/* <div className="border-t-2 border-green-700 w-16 mx-auto mb-8"></div> */}
                 </div>
                 <div className="flex justify-center  pb-14 md:pb-5">
                     <div className="max-w-[80rem] mx-auto md:px-5 px-3">
                         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-5">
                             {deadlines.map((item, index) => (
                                 <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-md shadow-lg border-y-4 border-[#528F62] hover:shadow-2xl transition-all duration-300 bg-white p-5"   >
-                                    <p className="text-[20px] mt-2  text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110">
+                                    <p className="text-[20px] mt-2 text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110">
                                         {item.date}
                                     </p>
                                     <h2 className="text-lg text-black text-center">

@@ -13,11 +13,11 @@ function Dates() {
         },
         {
             title: 'Deadline for Submitting Revised Full Paper',
-            date: '2026-January-18',
+            date: '2026-January-16',
         },
         {
             title: 'Notification of Acceptance',
-            date: '2026-January-25',
+            date: '2026-January-23',
         },
         {
             title: 'Camera-Ready Submission',

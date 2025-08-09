@@ -43,7 +43,7 @@ const ContactSection = () => {
                                 <MailIcon className="mr-2 text-[#528F62]" />
                                 Email
                             </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px]">x1y2z3@outlook.com</p>
+                            <p className="text-gray-700 text-base lg:text-[19px]">submit.icaabc@gmail.com</p>
                         </div>
                     </div>
                 </div>

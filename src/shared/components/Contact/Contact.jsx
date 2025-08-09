@@ -59,7 +59,7 @@ function Contact() {
                                 </div>
                                 <div className='flex flex-col gap-2'>
                                     <label htmlFor="number">Number</label>
-                                    <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} placeholder="Enter your number" className="w-full h-12 p-2 text-lg border rounded-lg  border-gray-100 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+                                        <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} placeholder="Enter your number" className="w-full h-12 p-2 text-lg border rounded-lg  border-gray-100 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-600" required />
                                 </div>
                                 <div className='flex flex-col gap-2'>
                                     <label htmlFor="message">Message</label>

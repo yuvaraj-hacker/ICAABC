@@ -32,23 +32,19 @@ if (!empty($missing_fields)) {
 $mail = new PHPMailer(true);
 
 try {
-    // SMTP configuration
     $mail->SMTPDebug = SMTP::DEBUG_OFF;
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'contact.icacsit@gmail.com';
-    $mail->Password   = 'ifis fndy zemd ddem'; // App Password
+    $mail->Username   = 'submit.icaabc@gmail.com';
+    $mail->Password   = 'mjzs kpgz twdf tqhb';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
-
-    // Email setup to admin
-    $mail->setFrom('contact.icacsit@gmail.com', 'ICACSIT Enquiry');
-    $mail->addAddress('contact.icacsit@gmail.com', 'ICACSIT Enquiry');
-    $mail->addReplyTo($_POST['email'], $_POST['firstname']    );
+    $mail->setFrom('submit.icaabc@gmail.com', 'ICAABC Enquiry');
+    $mail->addAddress('submit.icaabc@gmail.com', 'ICAABC Enquiry');
+    $mail->addReplyTo($_POST['email'], $_POST['firstname']);
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
-
     $mail->Body = '
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px;">
             <h2 style="color: #0B4F8E; border-bottom: 2px solid #287B86; padding-bottom: 10px;">New Enquiry</h2>
@@ -56,22 +52,22 @@ try {
                 <tr>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Name</td>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' .
-                        htmlspecialchars($_POST['firstname']) .  '</td>
+        htmlspecialchars($_POST['firstname']) .  '</td>
                 </tr>
                 <tr style="background-color: #f0f4f7;">
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Phone Number</td>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' .
-                        htmlspecialchars($_POST['number']) . '</td>
+        htmlspecialchars($_POST['number']) . '</td>
                 </tr>
                 <tr>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Email</td>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' .
-                        htmlspecialchars($_POST['email']) . '</td>
+        htmlspecialchars($_POST['email']) . '</td>
                 </tr>
                 <tr style="background-color: #f0f4f7;">
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Message</td>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' .
-                        nl2br(htmlspecialchars($_POST['message'])) . '</td>
+        nl2br(htmlspecialchars($_POST['message'])) . '</td>
                 </tr>
             </table>
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666;">
@@ -94,15 +90,15 @@ try {
     $replyMail->isSMTP();
     $replyMail->Host       = 'smtp.gmail.com';
     $replyMail->SMTPAuth   = true;
-    $replyMail->Username   = 'contact.icacsit@gmail.com';
+    $replyMail->Username   = 'submit.icaabc@gmail.com';
     $replyMail->Password   = 'zhcn rotu llkd adyi';
     $replyMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $replyMail->Port       = 587;
 
-    $replyMail->setFrom('contact.icacsit@gmail.com', 'ICACSIT Team');
+    $replyMail->setFrom('submit.icaabc@gmail.com', 'ICAABC Team');
     $replyMail->addAddress($_POST['email'], $_POST['firstname']);
     $replyMail->isHTML(true);
-    $replyMail->Subject = 'Thank you for your enquiry - ICACSIT 2025';
+    $replyMail->Subject = 'Thank you for your enquiry - ICAABC 2025';
 
     $replyMail->Body = '
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
@@ -115,11 +111,11 @@ try {
                 <li><strong>Phone:</strong> ' . htmlspecialchars($_POST['number']) . '</li>
                 <li><strong>Message:</strong> ' . nl2br(htmlspecialchars($_POST['message'])) . '</li>
             </ul>
-            <p>Warm regards,<br>ICACSIT 2025 Team</p>
+            <p>Warm regards,<br>ICAABC 2025 Team</p>
         </div>
     ';
 
-    $replyMail->AltBody = "Thank you " . $_POST['firstname'] . " for contacting us.\n\nWe have received your enquiry and will get back to you soon.\n\n- ICACSIT 2025 Team";
+    $replyMail->AltBody = "Thank you " . $_POST['firstname'] . " for contacting us.\n\nWe have received your enquiry and will get back to you soon.\n\n- ICAABC 2025 Team";
 
     $replyMail->send();
 

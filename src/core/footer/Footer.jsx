@@ -36,7 +36,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-white mb-3">Contact</h3>
               <ul className="space-y-2 md:text-base">
                 <li>
-                  Email: <a href="mailto:support@acsitconference.com" className="">contact.icacsit@gmail.com</a>
+                  Email: <a href="mailto:support@acsitconference.com" className="">submit.icaabc@gmail.com</a>
                 </li>
                 <li>
                   Location: Seoul, South Korea

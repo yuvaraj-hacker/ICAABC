@@ -17,7 +17,7 @@ function Scope() {
                                 <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15    ">
                                     <div className="w-full grid lg:grid-cols-3 gap-6 items-center">
                                         <div className='lg:col-span-1  mx-auto '>
-                                            <img src="/images/home/scope-of-conference.webp" className='rounded-lg mx-auto' alt="" />
+                                            <img src="/images/home/scope-of-conference.webp" className='rounded-md mx-auto' alt="" />
                                         </div>
                                         <div className='lg:col-span-2'>
                                             <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">
@@ -52,7 +52,7 @@ function Scope() {
                                 "Decision Support Systems and Knowledge Engineering",
                                 "Cloud-Native DevOps and Infrastructure as Code",
                             ].map((item, index) => (
-                                <div key={index} className="bg-white shadow-md rounded- p-6 text-gray-800  rounded-lg border-y-3 border-y-[#528F62] hover:shadow-xl transition duration-300 ease-in-out">
+                                <div key={index} className="bg-white shadow-md rounded- p-6 text-gray-800  rounded-md border-y-3 border-y-[#528F62] hover:shadow-xl transition duration-300 ease-in-out">
                                     <h3 className="text-base font-semibold">{item}</h3>
                                 </div>
                             ))}

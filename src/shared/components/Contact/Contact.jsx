@@ -65,7 +65,7 @@ function Contact() {
                                     <label htmlFor="message">Message</label>
                                     <textarea name="message" id='message' value={formData.message} onChange={handleChange} placeholder="Enter your message" className="w-full h-40 p-4 text-lg border rounded-lg  border-gray-100 shadow-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-600" required   ></textarea>
                                 </div>
-                                <button type="submit" className="w-full cursor-pointer p-3   bg-[#008235] text-white font-bold rounded-md hover:bg-[#008235] flex justify-center items-center gap-2"  >
+                                <button type="submit" className="w-full cursor-pointer p-3   bg-[#008235] text-white font-semibold rounded-md hover:bg-green-600 flex justify-center items-center gap-2"  >
                                     {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                 </button>
                             </form>

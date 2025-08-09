@@ -146,7 +146,7 @@ export default function HeroSection({ data }) {
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-center gap-5 md:gap-5">
                   {deadlines.map((item, index) => (
                     <div key={index} className="h-auto gap-2 flex flex-col justify-between items-center rounded-md shadow-lg border-y-4 border-[#528F62] hover:shadow-2xl transition-all duration-300 bg-white p-4"   >
-                      <p className="md:text-[20px] mt-2  text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110  ">
+                      <p className="md:text-[20px] mt-2 text-[#528F62] font-semibold text-center w-full transform transition-transform duration-500 hover:scale-110  ">
                         {item.date}
                       </p>
                       <h2 className="text-lg text-black text-center">

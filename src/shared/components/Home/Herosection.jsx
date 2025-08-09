@@ -42,7 +42,7 @@ export default function HeroSection({ data }) {
           <div className="w-full  max-w-[110rem] ml-auto flex flex-col items-center md:pt-10 pt-18  md:h-auto  ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div className="text-center lg:text-left  md:pl-10 2xl:pb-20">
-                <h1 className="text-white font-bold md:py-0 mb-5  2xl:text-5xl  lg:text-4xl md:text-3xl text-xl leading-tight">
+                <h1 className="text-white font-bold md:py-0 mb-5  2xl:text-5xl md:px-0 px-3  lg:text-4xl md:text-3xl text-xl leading-tight">
                   International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025
                 </h1>
                 <Link to='/paper-submission'>
@@ -55,7 +55,7 @@ export default function HeroSection({ data }) {
                 <div className="bg-[url('/images/home/react.png')] bg-cover bg-center w-full pl-1 pt-1">
                   <div className="relative">
                     <img alt="Venue" src="/images/home/final-sec.png" className=" w-full  " />
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@ export default function HeroSection({ data }) {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-4 items-center">
                 <div>
-                  <p className="text-base lg:text-lg mb-4 text-justify">The International Conference on Advances in AI, Business Analytics, and Cloud Systems is a premier global event uniting researchers, industry experts, and academics to explore innovations in AI, Business Analytics, and Cloud Systems. Featuring keynote speeches, technical sessions, workshops, and industry panels, ICAABC addresses cutting-edge topics like machine learning, data analytics, cloud security, and AI ethics. The conference fosters collaboration, knowledge sharing, and practical solutions to real-world challenges. Whether you're a researcher, practitioner, or student, ICAABC offers a platform to network, learn, and contribute to the future of technology and business. Join us to shape the next wave of innovation!              </p>
+                  <p className="text-base lg:text-lg mb-4 text-justify">The International Conference on Advances in AI, Business Analytics, and Cloud Systems (ICAABC) brings together researchers, industry experts, and academics to explore innovations in AI, analytics, and cloud technologies. Through keynotes, technical sessions, and workshops, it covers topics like machine learning, cloud security, and AI ethics, fostering collaboration, knowledge sharing, and real-world solutions. ICAABC is a platform to network, learn, and shape the future of technology and business.</p>
                 </div>
                 <div className="flex justify-center items-center">
-                  <img alt="About Image" className="rounded-md shadow-lg w-full h-full" src="/images/home/aboutimage.webp" />
+                  <img alt="About Image" className="  w-full h-full" src="/images/home/about.png" />
                 </div>
               </div>
             </div>

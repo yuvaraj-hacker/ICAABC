@@ -5,28 +5,26 @@ const ContactSection = () => {
         <section className="bg-gray-100" id="contact">
             <div className="pb-14 px-6 md:px-6 mx-auto max-w-[80rem]">
                 <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="md:text-3xl text-xl font-bold   text-green-700 mb-4">Contact</h2>
+                    <h2 className="md:text-3xl text-xl font-bold text-green-700 mb-4">Contact</h2>
                     <div className="border-t-2 border-[#528F62] w-16 mx-auto mb-8"></div>
                 </div>
                 <div className="grid md:grid-cols-1 gap-8 mt-8">
-                    <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
-                        <div className=" ">
-                            <h3 className="text-xl font-semibold text-[#528F62] flex items-center mb-3">
-                                <GlobeIcon className="mr-2 text-[#528F62]" />
+                    <div className="relative border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-[url('/images/home/ai.jpg')] bg-center bg-cover">
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-black/70 "></div>
+
+                        {/* Content */}
+                        <div className="relative">
+                            <h3 className="text-xl font-semibold text-white flex items-center mb-3">
+                                <GlobeIcon className="mr-2 text-white" />
                                 About International Forum
                             </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px] text-justify">
+                            <p className="text-white text-base lg:text-[19px] text-justify">
                                 The Seoul International Forum is a modern event venue in Seoul, South Korea, known for its sleek design and advanced facilities. It hosts conferences, exhibitions, and business events in a central, accessible location.
                             </p>
                         </div>
-                        {/* <div className="mb-6">
-                            <h3 className="text-xl font-semibold text-[#528F62] flex items-center mb-3">
-                                <MapPinIcon className="mr-2 text-[#528F62]" />
-                                Location
-                            </h3>
-                            <p className="text-gray-700 text-base lg:text-[18px]">Seoul, South Korea</p>
-                        </div> */}
                     </div>
+
                     <div className='grid md:grid-cols-3 gap-5'>
                         <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
                             <div className=" ">

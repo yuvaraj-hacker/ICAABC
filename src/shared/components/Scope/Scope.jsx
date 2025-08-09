@@ -17,7 +17,7 @@ function Scope() {
                                 <div className="max-w-[77rem] mx-auto flex flex-col md:flex-row 2xl:items-center gap-5 lg:gap-15    ">
                                     <div className="w-full grid lg:grid-cols-3 gap-6 items-center">
                                         <div className='lg:col-span-1  mx-auto '>
-                                            <img src="/images/home/scope-of-conference.webp" className='rounded-md mx-auto' alt="" />
+                                            <img src="/images/home/scope.png" className='rounded-md mx-auto' alt="" />
                                         </div>
                                         <div className='lg:col-span-2'>
                                             <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed">

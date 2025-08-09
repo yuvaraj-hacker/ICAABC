@@ -18,7 +18,7 @@ function About() {
                                     <div className="w-full">
                                         <div className='grid lg:grid-cols-3 gap-4 items-center mb-3'>
                                             <div className='lg:col-span-1'>
-                                                <img src="/images/home/aboutimage.webp" className='rounded-md' alt="" />
+                                                <img src="/images/home/about.png" className='rounded-md' alt="" />
                                             </div>
                                             <div className='lg:col-span-2'>
                                                 <p className="pb-3 md:pb-6 text-justify md:text-[18px] leading-relaxed ">

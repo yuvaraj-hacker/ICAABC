@@ -28,7 +28,6 @@ const ContactSection = () => {
                         </div> */}
                     </div>
                     <div className='grid md:grid-cols-3 gap-5'>
-
                         <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
                             <div className=" ">
                                 <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3">

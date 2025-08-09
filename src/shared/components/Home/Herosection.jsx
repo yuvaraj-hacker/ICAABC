@@ -38,11 +38,11 @@ export default function HeroSection({ data }) {
   return (
     <>
       <section className="bg-[#F3F4F6]">
-        <section className="bg-[#528F62] px-5 md:py-10 h-full">
-          <div className="w-full xl:w-[85%] 2xl:w-[65%] mx-auto flex flex-col items-center md:py-10 py-18  md:h-auto  ">
+        <section className="bg-[#528F62]  md:pt-10 h-full">
+          <div className="w-full  max-w-[110rem] ml-auto flex flex-col items-center md:pt-10 pt-18  md:h-auto  ">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-              <div className="text-center lg:text-left">
-                <h1 className="text-white font-bold md:py-0 mb-5   md:text-4xl text-xl leading-tight">
+              <div className="text-center lg:text-left  md:pl-10 2xl:pb-20">
+                <h1 className="text-white font-bold md:py-0 mb-5  2xl:text-5xl  lg:text-4xl md:text-3xl text-xl leading-tight">
                   International Conference on Advances in AI, Business Analytics, and Cloud Systems 2025
                 </h1>
                 <Link to='/paper-submission'>
@@ -52,16 +52,10 @@ export default function HeroSection({ data }) {
                 </Link>
               </div>
               <div className="flex justify-center flex-col w-fit">
-                <img alt="Venue" src="/images/home/icaabc.webp" className="rounded-t-md w-full border-t-4  border-t-white object-cover xl:max-w-xl 2xl:max-w-2xl" />
-                <div className="bg-white p-4 w-full rounded-b-md text-center">
-                  <div className="text-[#528F62] font-medium text-[clamp(1rem,2vw,1.25rem)] underline underline-offset-2  leading-relaxed flex md:flex-row justify-center flex-col">
-                    <div>
-                      Date:  February 16, 2026
-                    </div> <span className=" px-4 md:block hidden">|</span>
-                    <div>
-                      Venue: Seoul, South Korea
+                <div className="bg-[url('/images/home/react.png')] bg-cover bg-center w-full pl-1 pt-1">
+                  <div className="relative">
+                    <img alt="Venue" src="/images/home/final-sec.png" className=" w-full  " />
                     </div>
-                  </div>
                 </div>
               </div>
             </div>

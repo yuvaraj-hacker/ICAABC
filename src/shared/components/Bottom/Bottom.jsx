@@ -8,42 +8,55 @@ const ContactSection = () => {
                     <h2 className="md:text-3xl text-xl font-bold   text-green-700 mb-4">Contact</h2>
                     <div className="border-t-2 border-[#528F62] w-16 mx-auto mb-8"></div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-8 mt-8">
+                <div className="grid md:grid-cols-1 gap-8 mt-8">
                     <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
-                        <div className="mb-4">
+                        <div className=" ">
                             <h3 className="text-xl font-semibold text-[#528F62] flex items-center mb-3">
                                 <GlobeIcon className="mr-2 text-[#528F62]" />
                                 About International Forum
                             </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px] text-justify mb-6">
+                            <p className="text-gray-700 text-base lg:text-[19px] text-justify">
                                 The Seoul International Forum is a modern event venue in Seoul, South Korea, known for its sleek design and advanced facilities. It hosts conferences, exhibitions, and business events in a central, accessible location.
                             </p>
                         </div>
-                        <div className="mb-6">
+                        {/* <div className="mb-6">
                             <h3 className="text-xl font-semibold text-[#528F62] flex items-center mb-3">
                                 <MapPinIcon className="mr-2 text-[#528F62]" />
                                 Location
                             </h3>
                             <p className="text-gray-700 text-base lg:text-[18px]">Seoul, South Korea</p>
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
-                        <div className="mb-4">
-                            <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3" >
-                                <GlobeIcon className="mr-2 text-[#528F62]" />
-                                When
-                            </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px]">
-                                February 16, 2026 <br />
-                                9:00 AM - 5:00 PM
-                            </p>
+                    <div className='grid md:grid-cols-3 gap-5'>
+
+                        <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
+                            <div className=" ">
+                                <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3">
+                                    <MailIcon className="mr-2 text-[#528F62]" />
+                                    Location
+                                </h3>
+                                <p className="text-gray-700 text-base lg:text-[19px]">Seoul, South Korea</p>
+                            </div>
                         </div>
-                        <div className="mb-6">
-                            <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3">
-                                <MailIcon className="mr-2 text-[#528F62]" />
-                                Email
-                            </h3>
-                            <p className="text-gray-700 text-base lg:text-[19px]">submit.icaabc@gmail.com</p>
+                        <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
+                            <div className=" ">
+                                <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3">
+                                    <GlobeIcon className="mr-2 text-[#528F62]" />   When
+                                </h3>
+                                <p className="text-gray-700 text-base lg:text-[19px]">
+                                    February 16, 2026 <br />
+                                    9:00 AM - 5:00 PM
+                                </p>
+                            </div>
+                        </div>
+                        <div className="border-t-4 border-b-4 border-[#528F62] p-6 shadow-md rounded-md bg-white">
+                            <div className=" ">
+                                <h3 className="text-lg font-semibold text-[#528F62] flex items-center mb-3">
+                                    <MailIcon className="mr-2 text-[#528F62]" />
+                                    Email
+                                </h3>
+                                <p className="text-gray-700 text-base lg:text-[19px]">submit.icaabc@gmail.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
